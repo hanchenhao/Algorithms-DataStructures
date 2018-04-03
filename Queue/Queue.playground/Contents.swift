@@ -52,6 +52,10 @@ struct FastQueue<T> {
     func peek() -> T? {
         return array.isEmpty ? nil : array[head]
     }
+    
+    var count: Int {
+        return array.count - head
+    }
 
 }
 
