@@ -9,21 +9,23 @@
 下面用swift来实现一个基本的栈。只需要包装一下数组，将存取功能限制为 pop、push 和 peek 即可.
 
 ``` swift
+
 	public struct Stack<T> {
     //  创建一个数组
-    var array = [T]()
-    //  入栈,将元素插入数组末端
-    mutating func push(_ element: T) -> Void {
-        array.append(element)
-    }
-    //  出栈,将数组的末端元素移除
-    mutating func pop() -> T? {
-        return array.isEmpty ?  nil : array.removeLast()
-    }
-    //  获取栈顶元素
-    func peek() -> T? {
-        return array.last
-    }
+	    var array = [T]()
+	    //  入栈,将元素插入数组末端
+	    mutating func push(_ element: T) -> Void {
+	        array.append(element)
+	    }
+	    //  出栈,将数组的末端元素移除
+	    mutating func pop() -> T? {
+	        return array.isEmpty ?  nil : array.removeLast()
+	    }
+	    //  获取栈顶元素
+	    func peek() -> T? {
+	        return array.last
+	    }
+	    
 }
 ```
 压栈(push)操作是将新元素压入数组的尾部，而不是头部。在数组的头部插入元素是一个很耗时的操作，它的时间复杂度为 O(n)，因为需要将现有元素往后移位为新元素腾出空间。而在尾部插入元素的时间复杂度为 O(1)；无论数组有多少元素，这个操作所消耗的时间都是一个常量。
