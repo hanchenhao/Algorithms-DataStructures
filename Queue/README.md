@@ -79,7 +79,7 @@ xxx代表已经申请,但是还未使用的内存,再尾部插入一个元素就
 但是,如果我们从不移除队首的空位，随着不断地入队和出队，队列所占空间将不断增长。为了周期性地清理无用空间,我们将上面的代码再优化一下:
 ``` swift 
 	    mutating func dequeue() -> T? {
-        guard head > array.count , let element = array[head] else {
+        guard head < array.count , let element = array[head] else {
             return nil
         }
         array[head] = nil
