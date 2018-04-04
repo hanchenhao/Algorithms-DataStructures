@@ -25,15 +25,22 @@ queue.enqueue("c")
 print(queue.array)
 
 struct FastQueue<T> {
-    var array = [T?]()
+    private var array = [T?]()
     private var head = 0
-
-    mutating func enqueue(_ element: T) {
+    
+    public var isEmpty: Bool {
+        return count == 0
+    }
+    
+    public var count: Int {
+        return array.count - head
+    }
+    public mutating func enqueue(_ element: T) {
         array.append(element)
     }
-
-    mutating func dequeue() -> T? {
-        guard head > array.count , let element = array[head] else {
+    
+    public mutating func dequeue() -> T? {
+        guard head < array.count , let element = array[head] else {
             return nil
         }
         let capacity = 50   //数组的容量
@@ -48,15 +55,11 @@ struct FastQueue<T> {
         }
         return element
     }
-
-    func peek() -> T? {
-        return array.isEmpty ? nil : array[head]
+    
+    public func peek() -> T? {
+        return isEmpty ? nil : array[head]
     }
     
-    var count: Int {
-        return array.count - head
-    }
-
 }
 
 var q = FastQueue<String>()
@@ -67,9 +70,10 @@ q.enqueue("d")
 q.enqueue("e")
 q.enqueue("f")
 q.enqueue("g")
-print(q.array)
-q.dequeue()
-print(q.array)
+print(q.dequeue() ?? "")
+print(q.dequeue() ?? "")
+print(q.peek() ?? "")
+print(q.count)
 
 
 
