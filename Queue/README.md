@@ -58,7 +58,7 @@ xxx代表已经申请,但是还未使用的内存,再尾部插入一个元素就
 	    }
 
 	    mutating func dequeue() -> T? {
-	        guard head > array.count , let element = array[head] else {
+	        guard head < array.count , let element = array[head] else {
 	            return nil
 	        }
 	        array[head] = nil
