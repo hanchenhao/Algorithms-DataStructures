@@ -75,13 +75,13 @@ class Graph: Equatable {
 我们给Graph插入一些测试数据,它将形成一个这样形状的结构
 
 ```
-							      a
-							     / \
-								  b   c
-							  	 / \ / \ 
-							   d  e-f-g
-							      / 
-							     h
+		      a
+		     / \
+		  b   c
+		  	 / \ / \ 
+		   d  e-f-g
+		      / 
+		     h
 
 ```
 
