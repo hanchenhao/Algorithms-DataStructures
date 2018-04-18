@@ -73,6 +73,8 @@ class Graph: Equatable {
 ```
 
 我们给Graph插入一些测试数据,它将形成一个这样形状的结构
+
+```
 							      a
 							     / \
 								  b   c
@@ -81,6 +83,7 @@ class Graph: Equatable {
 							      / 
 							     h
 
+```
 
 当我们用广度优先搜索的时候,算法将让它将沿着a-b-c-d-e-f-g-h 这样一个路线进行搜索
 
