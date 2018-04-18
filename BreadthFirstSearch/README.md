@@ -78,10 +78,10 @@ class Graph: Equatable {
 		      a
 		     / \
 		  b   c
-		  	 / \ / \ 
-		   d  e-f-g
-		      / 
-		     h
+		 / \ / \ 
+	  d  e-f-g
+	   / 
+	  h
 
 ```
 
