@@ -24,7 +24,7 @@
 ### 树
 
 - [树](Tree/)-通用的树形结构
-- [二叉树](BinarySearchTree)-二叉树
+- [二叉树](BinarySearchTree/)-二叉树
 
 ### 哈希
 
@@ -44,7 +44,7 @@
 ## 搜索算法
 
 - [二分搜索](BinarySearch)
-- [二叉树搜索](BinarySearchTree)
+- [二叉树搜索](BinarySearchTree/)
 - [广度优先搜索](BreadthFirstSearch/)
 - [深度优先搜索](DepthFirstSearch/)
 
