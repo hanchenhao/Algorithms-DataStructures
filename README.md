@@ -48,4 +48,7 @@
 - [广度优先搜索](BreadthFirstSearch/)
 - [深度优先搜索](DepthFirstSearch/)
 
+## 缓存算法
+
+- [缓存淘汰算法](LRU)
 
