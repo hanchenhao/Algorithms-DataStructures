@@ -151,7 +151,6 @@ class LRUCache<Key: Hashable , Value> {
 我们插入一些数据来测试一下算法是否可以成功淘汰数据
 
 ```
-
 let cache = LRUCache<String , Any>(capacity: 3)
 cache.setValue(1, for: "1") //  1
 cache.setValue(2, for: "2") //  2 1
@@ -165,8 +164,7 @@ print(cache.getValue(for: "1") ?? "none")
 最终的结果为
 
 >2
-
->none
+>"none"
 
 
 
