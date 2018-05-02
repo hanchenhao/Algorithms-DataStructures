@@ -165,6 +165,7 @@ print(cache.getValue(for: "1") ?? "none")
 最终的结果为
 
 >2
+
 >none
 
 
