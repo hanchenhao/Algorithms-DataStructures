@@ -1,6 +1,6 @@
 # 基本的算法和数据结构
 
-> 注：本文译自 [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club)。
+> 注：本文部分译自 [Swift Algorithm Club](https://github.com/raywenderlich/swift-algorithm-club)。
 > 
 > 
 所有的代码都是兼容  **Swift 4** 的。如果 Swift 有更新，我也会及时跟进。
@@ -56,5 +56,8 @@
 
 - [矩阵最大值](DynamicProgramming)
 
+## 贪心算法
+
+-[找钱问题](GreedAlgorithm)
 
 
