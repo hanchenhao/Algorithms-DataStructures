@@ -58,6 +58,6 @@
 
 ## 贪心算法
 
--[找钱问题](GreedAlgorithm)
+- [找钱问题](GreedAlgorithm)
 
 
